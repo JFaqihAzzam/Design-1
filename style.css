@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #E0CCBE;
+}
+
+header {
+    background-color: #3C3633;
+    color: #EEEDEB;
+    width: 100%;
+    position: fixed;
+}
+
+header nav {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    padding: 0 0 0 20px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style-type: none;
+    padding: 0 20px;
+
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #EEEDEB;
+}
+
+/* ------------- */
+
+main {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+#content, #content-form, aside {
+    padding-top: 50px;
+
+}
+
+#content {
+    text-align: center;
+    color: #747264;
+    background-color: #EEEDEB;
+}
+
+#content h1 {
+    color: #3C3633;
+}
+
+#content .profil {
+    margin: 10px;
+    width: 200px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+#content-form h1 {
+    color: #3C3633;
+    text-align: center;
+    padding: 5px;
+    font-size: 24px;
+}
+
+#content article {
+    padding: 20px 0;
+}
+
+aside img {
+    margin: 20px 0;
+    width: 100px;
+}
+
+#content p {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+aside {
+    background-color: #EEEDEB;
+    text-align: center;
+    color: #747264;
+}
+
+aside h1 {
+    padding: 5px;
+    color: #3C3633;
+}
+
+aside .group {
+    display: flex;
+    justify-content: center;
+}
+
+aside article {
+    border: 1px solid #3C3633;
+    width: 300px;
+    margin: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+aside h4 {
+    border-bottom: 1px solid #3C3633;
+    padding: 0 0 5px 0;
+    color: #3C3633;
+}
+
+#content-form {
+    background-color: #EEEDEB;
+    text-align: center;
+}
+
+#content-form .text {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 500px;
+}
+
+.icon a {
+    color: #3C3633;
+    text-decoration: none;
+}
+
+.icon i {
+    margin: 20px 10px;
+}
+
+.text .input {
+    margin: 5px 0;
+    padding: 5px;
+    resize: vertical;
+}
+
+form button {
+    padding: 10px 50px;
+    margin: 10px;
+}
+/* ---------------------- */
+
+footer {
+    background-color: #3C3633;
+    color: #EEEDEB;
+    text-align: center;
+    font-size: 12px;
+    padding: 5px 0;
+}
+/* ------------------------------------------------------------------------------------------------ */
+
+@media (max-width: 700px){
+    header nav {
+        flex-direction: column;
+    }
+
+    nav h1 {
+        padding: 0;
+    }
+
+    aside .group {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    aside article {
+        width: 70%;
+        margin: 10px 0;
+        padding: 10px 20px;
+    }
+}
